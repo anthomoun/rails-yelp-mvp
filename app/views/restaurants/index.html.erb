@@ -1,0 +1,15 @@
+
+<h1>restaurant's list</h1>
+<ul>
+    <% @restaurants.each do |restaurant| %>
+  <li>
+  <%= link_to restaurant.name, restaurant_path(restaurant), class: "text-decoration-none" %> 
+  </li>
+  <% end %>
+
+ 
+
+</ul>
+<br>
+</ul>
+
